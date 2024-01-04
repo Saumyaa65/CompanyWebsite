@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas
 
+st.set_page_config(layout="wide")
 st.header("The Best Company")
 content1='''
 Hello. This is an amazing company which will 
