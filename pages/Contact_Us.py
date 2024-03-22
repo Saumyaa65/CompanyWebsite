@@ -11,5 +11,5 @@ with st.form(key="email"):
     message=st.text_area("Text")
     button=st.form_submit_button()
     if button:
-        send_email(message, email, topic)
+        send_email(message.encode('utf-8'), email, topic)
         st.info("Email sent successfully")
